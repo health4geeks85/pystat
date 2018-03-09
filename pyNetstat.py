@@ -6,6 +6,7 @@ FILE_PATH = r'C:\Windows\System32\NETSTAT.EXE'
 FILTERED_PORT = '3389'
 
 def netstat(*args):
+    print("WELCOME TO NETSTAT!!!")
     params = [FILE_PATH, *args]
     with Popen(params,
                stdout=PIPE,
