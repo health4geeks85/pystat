@@ -31,7 +31,6 @@ def registerSignals():
 def netstat(*args):
     global PROC
     registerSignals()
-    print("WELCOME TO NETSTAT!!!")
     params = [FILE_PATH, *args]
     with Popen(params,
                stdout=PIPE,
