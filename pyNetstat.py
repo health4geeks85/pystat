@@ -30,7 +30,6 @@ def registerSignals():
 
 def netstat(*args):
     global PROC
-    print('TEST')
     registerSignals()
     params = [FILE_PATH, *args]
     with Popen(params,
